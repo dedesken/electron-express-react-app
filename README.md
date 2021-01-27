@@ -4,7 +4,7 @@
 
 This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
 
-A basic Electron application needs just these files:
+A basic Electron application with Express needs just these files:
 
 - `package.json` - Points to the app's main file and lists its details and dependencies.
 - `electron.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.

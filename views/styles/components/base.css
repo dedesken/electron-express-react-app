@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: helvetica, sans-serif;
+	font-size: 100%;
+}
+
+body {
+    font-family: helvetica, sans-serif;
+	font-size: 16px;
+    color: #333;
+    margin: 0
+}
+
+.container {
+	max-width: 78.125em;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+	&.container-md {
+		max-width: 43.75em;
+	}
+
+	&.container-lg {
+		max-width: 61.5em;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.AppBtns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.AppBtns button {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.CustomSelect::after,
+.ActiveSelect::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #000;
+    top: calc(50% - 3px);
+    right: 5px;
+}
+
+.ActiveSelect::after {
+    border-top: 6px solid orangered;
+}
+
+.CustomSelect,
+.ActiveSelect {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.CustomSelectText {
+    padding-left: 2%;
+    width: 90%;
+    font-size: 20px;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ActiveSelect {
+    border: 2px solid orangered;
+}
+
+.CustomDropdown {
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    overflow-y: auto;
+    font-family: Arial;
+}
+
+.CustomDropdownItem {
+    padding: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.CustomDropdownItem:hover {
+    background-color: rgba(110, 110, 110, 0.15);
+    border-radius: 3px;
+}
+
+.app_navigation {
+    display: flex;
+}
+
+.app_navigation p {
+    margin: 0;
+    margin-left: 7px;
+    margin-right: 7px;
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+    cursor: pointer
+}
+
+.app_navigation p:hover {
+    color: black;
+}
+
+.SpreadsheetGridSelectHeader:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border:none;
+    top: calc(50% - 3px);
+    right: 5px;
+}

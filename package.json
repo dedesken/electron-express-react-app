@@ -11,7 +11,7 @@
     "make": "electron-forge make"
   },
   "repository": "https://github.com/dedesken/electron-express-react-app",
-  "author": "GitHub",
+  "author": "Dedesken",
   "license": "CC0-1.0",
   "devDependencies": {
     "@babel/core": "7.12.9",

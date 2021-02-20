@@ -66,6 +66,6 @@ export const sendRows = (rows, setRows) => {
 
     const data = rows.map(toArrayOfStrings)
 
-    //Sending data to Api, and then reset tabel...
+    //Sending data to Api, and then reset tabale...
     Api.saveFiles(data).then(res => setRows([{...newRow}]))
 }
